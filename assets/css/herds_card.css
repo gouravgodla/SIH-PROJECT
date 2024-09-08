@@ -1,0 +1,358 @@
+@import url("https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&display=swap");
+body {
+  background-color: #dcdcdc;
+  font-family: "Darker Grotesque", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-size: 2em;
+  margin: 10px;
+}
+header {
+  text-align: center;
+}
+
+/* details section  */
+section {
+  flex-wrap: wrap;
+  margin: 2em auto;
+  background: #fff;
+  box-shadow: 4px 4px 0#DCDCDC;
+  padding-block: 80px;
+  background-image: linear-gradient(
+      90deg,
+      #fff 12px,
+      0,
+      #dcdcdc 15px,
+      0,
+      #dcdcdc 20px,
+      0,
+      #fff 100%
+    ),
+    radial-gradient(circle closest-side, rgba(255, 255, 255, 0) 88%, #fff 100%),
+    radial-gradient(circle at 22px 8px, #dcdcdc 40%, #dcdcdc 40%, #dcdcdc 100%);
+  background-size: 32px 8px, 32px 16px, 32px 16px;
+  background-repeat: space no-repeat;
+  background-position: center top, center 6px, center 6px;
+  display: flex;
+  max-width: 1440px;
+  margin: auto;
+  gap: 20px;
+  .grid-container {
+    width: 100%;
+    margin: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    button {
+      font-family: "Darker Grotesque", sans-serif;
+      font-weight: bold;
+      align-self: center;
+      background: transparent;
+      padding: 1rem 1rem;
+      transition: all 0.2s ease;
+      color: #000000;
+      font-size: 2rem;
+      margin: auto;
+      letter-spacing: 1px;
+      outline: none;
+      box-shadow: 10px 10px 0px 0px hsla(0, 0, 0, 0.5);
+      border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+      width: fit-content;
+      &:hover {
+        box-shadow: 0px 0px 0px 0px hsla(0, 0, 0, 0.5);
+      }
+    }
+  }
+
+  .left {
+    float: left;
+    position: relation;
+    #answer {
+      transition: ease opacity 0.5s, ease transform 0.5s;
+      background: #f8f892;
+      padding: 50px 25px 25px;
+      position: absolute;
+      transform: rotate(-10deg) translate(0px, -50px);
+      max-width: 200px;
+      height: 200px;
+      left: 58%;
+      opacity: 0;
+      &.open {
+        transform: rotate(-10deg) translate(0px, 0px);
+        opacity: 1;
+      }
+      &:before {
+        content: "_";
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        display: block;
+        background: #ba4343;
+        border-radius: 500px;
+        left: 45%;
+        top: 5px;
+        color: transparent;
+        box-shadow: 2px 2px 2px #993838;
+      }
+
+      .outcome {
+        font-size: 2em;
+        text-align: center;
+        padding-bottom: 25px;
+      }
+      .details {
+        text-align: center;
+      }
+    }
+  }
+  @media (max-width: 1000px) {
+    padding: 80px 25px;
+    > div {
+      width: 100% !important;
+    }
+  }
+}
+
+/* icon section  */
+section {
+  flex-wrap: wrap;
+  margin: 2em auto;
+  background: #fff;
+  box-shadow: 4px 4px 0#DCDCDC;
+  padding-block: 80px;
+  background-image: linear-gradient(
+      90deg,
+      #fff 12px,
+      0,
+      #dcdcdc 15px,
+      0,
+      #dcdcdc 20px,
+      0,
+      #fff 100%
+    ),
+    radial-gradient(circle closest-side, rgba(255, 255, 255, 0) 88%, #fff 100%),
+    radial-gradient(circle at 22px 8px, #dcdcdc 40%, #dcdcdc 40%, #dcdcdc 100%);
+  background-size: 32px 8px, 32px 16px, 32px 16px;
+  background-repeat: space no-repeat;
+  background-position: center top, center 6px, center 6px;
+  display: flex;
+  max-width: 1440px;
+  margin: auto;
+  gap: 20px;
+  .grid-container-1 {
+    width: 100%;
+    margin: 40px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    button {
+      font-family: "Patrick Hand SC", cursive;
+      font-weight: bold;
+      align-self: center;
+      background: transparent;
+      padding: 1rem 1rem;
+      transition: all 0.2s ease;
+      color: #000000;
+      font-size: 2rem;
+      margin: auto;
+      letter-spacing: 1px;
+      outline: none;
+      box-shadow: 10px 10px 0px 0px hsla(0, 0, 0, 0.5);
+      border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+      width: fit-content;
+      &:hover {
+        box-shadow: 0px 0px 0px 0px hsla(0, 0, 0, 0.5);
+      }
+    }
+  }
+
+  .left {
+    float: left;
+    position: relation;
+    #answer {
+      transition: ease opacity 0.5s, ease transform 0.5s;
+      background: #f8f892;
+      padding: 50px 25px 25px;
+      position: absolute;
+      transform: rotate(-10deg) translate(0px, -50px);
+      max-width: 200px;
+      height: 200px;
+      left: 58%;
+      opacity: 0;
+      &.open {
+        transform: rotate(-10deg) translate(0px, 0px);
+        opacity: 1;
+      }
+      &:before {
+        content: "_";
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        display: block;
+        background: #ba4343;
+        border-radius: 500px;
+        left: 45%;
+        top: 5px;
+        color: transparent;
+        box-shadow: 2px 2px 2px #993838;
+      }
+
+      .outcome {
+        font-size: 2em;
+        text-align: center;
+        padding-bottom: 25px;
+      }
+      .details {
+        text-align: center;
+      }
+    }
+  }
+  @media (max-width: 1000px) {
+    padding: 80px 25px;
+    > div {
+      width: 100% !important;
+    }
+  }
+}
+
+/* 3d icon  link page section  */
+
+.grid-container-1 {
+  display: inline-block;
+  gap: 10px;
+  margin-left: 50px;
+}
+.view-container {
+  display: grid;
+}
+.pointer {
+  cursor: pointer;
+}
+
+/* slider view  */
+
+.box-area {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  width: 70px;
+  height: 400px;
+  margin-right: 20px;
+  overflow: hidden;
+  border-radius: 20px;
+  position: relative;
+  transition: all linear 0.6s;
+}
+
+.box:last-child {
+  margin-right: 0;
+}
+
+.box::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.box i {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  background: #ffffff;
+  position: absolute;
+  bottom: 20px;
+  left: 10px;
+  font-size: 20px;
+}
+
+.box:nth-child(1) i {
+  color: #11c91acf;
+}
+.box:nth-child(2) i {
+  color: #11c91acf;
+}
+.box:nth-child(3) i {
+  color: #11c91acf;
+}
+.box:nth-child(4) i {
+  color: #11c91acf;
+}
+.box:nth-child(5) i {
+  color: #11c91acf;
+}
+
+.box h2 {
+  position: absolute;
+  bottom: 30px;
+  left: 60px;
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;
+  color: #f6f6f6;
+  font-weight: 600;
+  opacity: 0;
+  transition: all linear 0.3s;
+}
+
+.box p {
+  position: absolute;
+  bottom: 10px;
+  left: 60px;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #f6f6f6;
+  opacity: 0;
+  transition: all linear 0.3s;
+}
+
+.box.active h2 {
+  opacity: 1;
+}
+
+.box.active p {
+  opacity: 1;
+}
+
+.active {
+  width: 600px;
+  transition: all linear 0.6s;
+}
+/* .parent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.child1 {
+  width: 500px;
+  height: 500px;
+  background-color: blanchedalmond;
+}
+
+.child2 {
+  width: 500px;
+  height: 500px;
+  background-color: brown;
+} */
