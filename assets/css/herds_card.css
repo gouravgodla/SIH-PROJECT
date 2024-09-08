@@ -356,3 +356,31 @@ section {
   height: 500px;
   background-color: brown;
 } */
+a:link {
+  color: rgb(0, 0, 0);
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: rgb(255, 255, 255);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(0, 0, 0);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:active {
+  color: rgb(0, 0, 0);
+  background-color: transparent;
+  text-decoration: none;
+}
+.navbar {
+  background-color: #28666e;
+  color: #d8d6d6;
+  margin-bottom: 10px;
+  border-radius: 20px;
+}
